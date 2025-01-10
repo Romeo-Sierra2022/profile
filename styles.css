@@ -1,0 +1,56 @@
+/* resets */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --clr-white: #FFDDCC;
+    --clr-mid-white: #fe9967;
+    --clr-primary: #fe5501;
+    --clr-mid-black: #983301;
+    --clr-black: #0a0600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: var(--clr-black);
+}
+
+/* typography */
+
+/* garphics */
+
+#top-left-style {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 20rem;
+    height: 20rem;
+}
+
+#top-bar {
+    position: absolute;
+    width: 100%;
+    height: 2rem;
+    background-image: linear-gradient(45deg, var(--clr-mid-black), var(--clr-mid-black), var(--clr-mid-white), var(--clr-mid-black));
+    border-radius: 0.25rem;
+}
+
+#top-bar::after {
+    position: absolute;
+    content: "";
+    height: 0.25rem;
+    width: 100%;
+    transform: translate(4rem, 3rem);
+    background-image: linear-gradient(to right, var(--clr-mid-black) , var(--clr-mid-white), var(--clr-mid-black));
+}
+
+#left-bar {
+    position: absolute;
+    width: 2rem;
+    height: 100%;
+    background-image: linear-gradient(225deg, var(--clr-mid-black), var(--clr-mid-black) , var(--clr-mid-white), var(--clr-mid-black));
+    border-radius: 0.25rem;
+
+}
